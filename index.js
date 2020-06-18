@@ -1,1 +1,1 @@
-console.log("Hi");
+alert("응 안돼");
