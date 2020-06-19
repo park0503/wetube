@@ -1,0 +1,17 @@
+nodeJS
+
+require 은 괄호 안의 이름을 가진 
+node module을 어디선가 (내 파일들 안에서)
+가져온다.
+
+npm install ~~~ -D
+
+middleware가 next대신 res.send를 쓰면
+연결을 중간에 끝는것이다.
+
+export 변수 -> 그 변수만 export 하는 것
+import { 변수명 } from "./경로"로 import
+
+export default 파일 명 - > 파일 전체를
+export
+import 파일명 from "./경로"로 import
