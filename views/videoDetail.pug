@@ -2,4 +2,16 @@ extends layouts/main.pug
 include mixins/videoBlock
 
 block content
-    p Video Detail
+    .video__player
+        video(src=`/${video.fileUrl}`, controls=true)
+    .video__info
+        a(href=routes.editVideo(video.id)) Edit Video
+        h5.video__title=video.title
+        span.video__views=video.views
+        p.video__description=video.description
+    .video__comment
+        if video.comments.length === 1
+            span.video__comment-number 1 comment
+            //댓글이 1개일 때 comment's'가 되는 것을 피하기 위해^^
+        else
+            span.video__comment-number #{video.comments.length} comments

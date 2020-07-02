@@ -15,3 +15,11 @@ import { 변수명 } from "./경로"로 import
 export default 파일 명 - > 파일 전체를
 export
 import 파일명 from "./경로"로 import
+
+const multerVideo = multer({ dest: "uploads/videos/" });
+여기서 경로에 "/uploads/videos" 라고
+쓰면 느그 컴퓨터 root에 uploads/videos란
+폴더를 만들고 그 안에 저장한다. 조심.
+
+Models.sort({ _id: -1 });
+id가 뒤에 있는 놈이 먼저 오게 정렬.
